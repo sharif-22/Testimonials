@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+.main{
+    margin: 3%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+    "one one two five"
+    "three four four five ";
+    color: hsl(210, 46%, 95%);
+
+}
+.avatar_name{
+    display: flex;
+    padding-bottom:15px;
+}
+.name{
+    padding-left:20px;
+    margin-top: 10px;
+}
+img{
+    width: 50px;
+    border: solid ;
+    border-radius: 50%;
+}
+
+.one,.two,.three,.four,.five{
+    padding: 3rem;
+    margin: .5rem;
+}
+
+.bold{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.verifi{
+    opacity: 50%;
+}
+.review{
+    margin-top: 3rem;
+    font-weight: 500;
+    opacity: 70%;
+    font-size: 1.3rem;
+}
+.one{
+    
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 1rem;
+    background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-size: 175px;
+    
+    
+
+}
+.two{
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 1rem;
+}
+.three,.five{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    color:black ;
+    
+}
+.four{
+    background-color: hsl(219, 29%, 14%);
+    border-radius:1rem;
+}
+
+/* grid style for mobile below  */
+
+
+
+@media (max-width: 425px) {
+
+    .main{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five" }
+
+}
+
+/* grid for area names */
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.five{
+    grid-area: five;
+ } 
+.four{
+    grid-area: four;
+}
